@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Cambio extends Model
 {
     use HasFactory;
+
+    public function aula()
+    {
+        return $this->belongsTo(Aula::class);
+    }
 }

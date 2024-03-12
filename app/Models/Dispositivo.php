@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Dispositivo extends Model
 {
     use HasFactory;
+
+    public function colocable()
+    {
+        return $this->morphTo();
+    }
 }
