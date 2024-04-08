@@ -13,7 +13,7 @@ class OrdenadorPolicy
      */
     public function viewAny(User $user): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -21,7 +21,7 @@ class OrdenadorPolicy
      */
     public function view(User $user, Ordenador $ordenador): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -29,7 +29,7 @@ class OrdenadorPolicy
      */
     public function create(User $user): bool
     {
-        //
+        return true;
     }
 
     /**

@@ -11,7 +11,7 @@ class UpdateOrdenadorRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,9 @@ class UpdateOrdenadorRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'marca' => 'required|max:255',
+            'modelo' => 'required|max:255',
+            'aula_id' => 'required|max:255',
         ];
     }
 }

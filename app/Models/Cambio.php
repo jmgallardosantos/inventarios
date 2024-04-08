@@ -13,4 +13,5 @@ class Cambio extends Model
     {
         return $this->belongsTo(Aula::class);
     }
+
 }
